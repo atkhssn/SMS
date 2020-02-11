@@ -1,0 +1,265 @@
+/* site settings for css start */
+*{
+    padding: none;
+    margin: none;
+    outline: none;
+    background: url(../img/bg-img.png) repeat fixed 0 0 #ffffff;
+}
+/* site setting for css end */
+
+/* common css start */
+a, a:hover{
+    text-decoration: none;
+    background: transparent !important;
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+h1{
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+h2{
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+h3{
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+h4{
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+h5{
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+p{
+    color: rgb(19, 19, 19);
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+ul, ol, li{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+.top_bar{
+    width: 100%;
+    height: 5px;
+    background: red;
+}
+
+.site_main_bar{
+    width: 100%;
+}
+
+.custom-bgT{
+    background: transparent !important;
+}
+
+.custom-bg1{
+    background: #46A049 !important;
+}
+
+.custom-bg2{
+    background: #1E7821 !important;
+}
+/* common css end */
+
+/* header part css start */
+.top_header{
+    width: 100%;
+}
+.header_content{
+    width: 100%;
+    display: flex;
+}
+
+.left_side{
+    width: 60%;
+}
+
+/* site logo part */
+.left_side .logo{
+    width: 100%;
+    height: 130px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    background: url(../img/logo.png) no-repeat !important;
+}
+
+.right_side{
+    width: 40%;
+}
+
+/* top menu part */
+.right_side .top_menu{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.right_side .top_menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.right_side .top_menu ul li{
+    margin-left: auto;
+}
+
+.right_side .top_menu ul li a{
+    font-size: 12px;
+    color:#000000;
+    transition: all 0.35s ease-in-out;
+}
+
+.right_side .top_menu ul li a:hover{
+    color: #ffffff;
+}
+
+/* search box part */
+.right_side .search_box{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+
+.right_side .search_box .custom-src-box{
+    color: white;
+    display: inline;
+    border-right: none !important;
+    background: #46A049 !important;
+    border: 1.8px solid #1E7821;
+    width: 430px;
+}
+
+.right_side .search_box .custom-src-box:focus{
+    box-shadow: none !important;
+}
+
+.right_side .search_box .search-btn{
+    background: #46A049 !important;
+    border-left: 0;
+    border-radius: 3px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border: 1.8px solid #1E7821;
+    color: white;
+}
+
+.right_side .search_box .search-btn:focus{
+    box-shadow: none !important;
+}
+/* header part css end */
+
+/* main menu part css start */
+#main-nav ul li .menu-link{
+    font-weight: 500;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    margin: 0 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.3;
+}
+
+#main-nav ul li .menu-link:hover{
+    padding: .5rem 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-bottom: 3px solid #46A049;
+}
+
+#main-nav ul li .dropdown-menu .dmenu-link{
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    padding:  8px;
+    text-transform: uppercase;
+    letter-spacing: 0.3;
+}
+
+#main-nav ul li .dropdown-menu .dmenu-link:hover{
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    background-color: #46A049 !important;
+}
+/* main menu part css end */
+
+/* Notice headline part css start */
+.notice-headline{
+    width: 100%;
+    display: flex;
+    border: 2px solid #1E7821;
+    margin: 5px 0;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+}
+
+.notice-headline .n-level{
+    width: 7%;
+}
+
+.notice-headline .n-level p{
+    background: #1E7821 !important;
+    padding: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .8;
+}
+
+.notice-headline .n-headline{
+    width: 93%;
+}
+
+.notice-headline .n-headline marquee{
+    padding: 8px;
+    background: #46A049 !important;
+}
+/* Notice headline part css end */
+
+/* wesite content part css start */
+.web-content{
+    width: 100%;
+    display: flex;
+}
+
+/* main content part css start */
+.main-content{
+    width: 70%;
+    border: 1px solid red;
+    height: 100px;
+}
+/* sidebar content part css start */
+
+.sidebar-content{
+    width: 30%;
+    border: 1px solid black;
+    height: 100px;
+}
+/* sidebar content part css end */
+/* main content part css end */
+/* wesite content part css end */
