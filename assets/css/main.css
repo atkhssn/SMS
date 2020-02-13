@@ -1,14 +1,19 @@
+/* google fonts start*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700&display=swap');
+/* google fonts start*/
+
 /* site settings for css start */
 *{
     padding: none;
     margin: none;
     outline: none;
 }
-/* site setting for css end */
 
 body{
     background: url(../img/bg-img.png) repeat fixed 0 0 #ffffff;
+    font-family: 'Roboto', sans-serif !important;
 }
+/* site setting for css end */
 
 /* common css start */
 a, a:hover{
@@ -303,12 +308,49 @@ ul, ol, li{
     
 }
 
+/* slider part css start */
+.site-slider{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.site-slider .slider-img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.slick-dots {
+	bottom: 10px;
+}
+
+.slick-dots li button{
+    border: 2px solid #1E7821;
+    border-radius: 50%;
+    background-color: #dddddd;
+}
+
+.slick-dots li button::before {
+    font-size: 30px;
+    color:  transparent;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #1E7821;
+    opacity: 1;
+}
+/* slider part css end */
+
 /* site event part css start */
 .site-event{
     width: 100%;
     height: 161px;
     overflow: hidden;
     display: flex;
+    border: 1px solid #1E7821;
+    margin: 0 0 30px;
 }
 
 .site-event .event-logo{
@@ -325,8 +367,30 @@ ul, ol, li{
 .site-event .event-countdown .coustom-coutdown{
     margin: 20px 0;
 }
-
 /* site event part css end */
+
+/* highlight content part css start */
+.highlight-content{
+    width: 100%;
+    display: flex;
+}
+
+.highlight-content .h-notice-part{
+    width: 25%;
+}
+
+.highlight-content .h-class-routine{
+    width: 25%;
+}
+
+.highlight-content .h-student-attendence{
+    width: 25%;
+}
+
+.highlight-content .h-gallery-part{
+    width: 25%;
+}
+/* highlight content part css end */
 
 /* sidebar content part css start */
 
@@ -429,7 +493,7 @@ ul, ol, li{
 .site-footer{
     width: 100%;
     height: 350px;
-    background: url(../img/fotter-img.png) repeat fixed 0 0 #000000;
+    background: url(../img/footer-img.png) repeat fixed 0 0 #000000;
     color : #ffffff;
 }
 

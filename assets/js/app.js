@@ -7,6 +7,18 @@ $(function($) {
     // News ticker
     $('#ticker').tickerme();
 
+    // slick slider
+    $('.site-slider').slick({
+        autoplay: true,
+        infinite: true,
+        arrows: true,
+        dots: true,
+        fade: true,
+        prevArrow: 'Prev',
+        nextArrow: 'Netx',
+        lazyLoad: 'ondemand',
+    });
+
     // JS Chart
     var background = {
         type: 'linearGradient',
