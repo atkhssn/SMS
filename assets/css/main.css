@@ -3,9 +3,12 @@
     padding: none;
     margin: none;
     outline: none;
-    background: url(../img/bg-img.png) repeat fixed 0 0 #ffffff;
 }
 /* site setting for css end */
+
+body{
+    background: url(../img/bg-img.png) repeat fixed 0 0 #ffffff;
+}
 
 /* common css start */
 a, a:hover{
@@ -85,6 +88,36 @@ ul, ol, li{
 .custom-bg2{
     background: #1E7821 !important;
 }
+
+.site-btn1{
+    font-size: 12px;
+    text-transform:  uppercase;
+    text-align: center;
+    background: #46A049 !important;
+    border: 1px solid #1E7821;
+    border-radius: 50px;
+    display: block;
+    margin: 15px 10px;
+    padding: 7px 10px;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1.8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.site-btn1:hover{
+    font-size: 12px;
+    text-transform:  uppercase;
+    text-align: center;
+    background: #1E7821 !important;
+    border: 1px solid #1E7821;
+    border-radius: 50px;
+    display: block;
+    margin: 15px 10px;
+    padding: 7px 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
 /* common css end */
 
 /* header part css start */
@@ -146,7 +179,6 @@ ul, ol, li{
 
 .right_side .search_box .custom-src-box{
     color: white;
-    display: inline;
     border-right: none !important;
     background: #46A049 !important;
     border: 1.8px solid #1E7821;
@@ -213,6 +245,7 @@ ul, ol, li{
     display: flex;
     border: 2px solid #1E7821;
     margin: 5px 0;
+    margin-bottom: 0;
     border-left: none;
     border-right: none;
     box-sizing: border-box;
@@ -228,16 +261,18 @@ ul, ol, li{
     color: #ffffff;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: .8;
+    letter-spacing: 1.1px;
 }
 
 .notice-headline .n-headline{
     width: 93%;
 }
 
-.notice-headline .n-headline marquee{
+#ticker_container{
     padding: 8px;
     background: #46A049 !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 /* Notice headline part css end */
 
@@ -245,21 +280,204 @@ ul, ol, li{
 .web-content{
     width: 100%;
     display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* main content part css start */
-.main-content{
-    width: 70%;
-    border: 1px solid red;
-    height: 100px;
+.main-body{
+    width: 72%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-right: 10px;
+    -webkit-box-shadow: 0px 0px 4px 1px #777777; 
+    box-shadow: 0px 0px 4px 1px #777777;
 }
+
+.main-content{
+    width: 100%;
+    background: #f9f9f9 !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 5px;
+    
+}
+
+/* site event part css start */
+.site-event{
+    width: 100%;
+    height: 161px;
+    overflow: hidden;
+    display: flex;
+}
+
+.site-event .event-logo{
+    width: 30%;
+}
+
+.site-event .event-countdown{
+    width: 70%;
+    background: #ffffff !important;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.site-event .event-countdown .coustom-coutdown{
+    margin: 20px 0;
+}
+
+/* site event part css end */
+
 /* sidebar content part css start */
 
-.sidebar-content{
-    width: 30%;
-    border: 1px solid black;
-    height: 100px;
+.sidebar-body{
+    width: 28%;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-left: 10px;
+    -webkit-box-shadow: 0px 0px 4px 1px #777777; 
+    box-shadow: 0px 0px 4px 1px #777777;
 }
+
+.sidebar-content{
+    width: 100%;
+    background: #f9f9f9 !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.sidebar-content .sidebar-heading{
+    background: transparent !important;
+    margin-bottom: 40px;
+}
+
+.sidebar-content .sidebar-heading p{
+    padding: 7px;
+    background: #46A049 !important;
+    border-bottom: 2px solid #1E7821;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+}
+
+.sidebar-content .sidebar-heading ul li{
+    display: block;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.sidebar-content .sidebar-heading ul li .notice-level{
+    margin-right: 8px;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    background: #46A049;
+    border: 1px solid #1E7821;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.sidebar-content .sidebar-heading ul li .link-aicon{
+    color: #1E7821;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+.sidebar-content .sidebar-heading ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    padding: 5px 7px;
+    line-height: 2;
+    border-bottom: 1px dotted #1E7821 !important;
+    transition: all 0.3s ease;
+}
+
+.sidebar-content .sidebar-heading ul li a:hover{
+    background: #e9e9e9 !important; 
+}
+
+.sidebar-content .sidebar-heading ul li:last-child a{
+    border-bottom: 0px dotted #1E7821;
+}
+
+.sidebar-content .sidebar-heading ul .i-links a{
+    line-height: 0;
+    border: none !important;
+}
+/* calender part css */
+.nao-month td.today{
+    box-shadow: 0 0 0 2px #46A049 inset;
+}
+
+.nao-month td.active{
+    box-shadow: 0 0 0 2px #1E7821 inset;
+}
+
+.calendar-1{
+    margin-top: 20px;
+}
+
 /* sidebar content part css end */
 /* main content part css end */
 /* wesite content part css end */
+
+/* footer part css start */
+.site-footer{
+    width: 100%;
+    height: 350px;
+    background: url(../img/fotter-img.png) repeat fixed 0 0 #000000;
+    color : #ffffff;
+}
+
+.footer-content{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.footer-content .footer-left{
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.footer-content .footer-left p{
+    color: #ffffff;
+    text-align: left;
+    padding: 50px 0;
+}
+
+.footer-content .footer-middle{
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.footer-content .footer-middle .footer-logo{
+    width: 150px;
+    height: 150px;
+    margin: 70px auto 60px;
+}
+
+.footer-content .footer-middle p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-content .footer-middle p a{
+    color:  #ffffff;
+}
+
+.footer-content .footer-right{
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+.footer-content .footer-right p{
+    color: #ffffff;
+    text-align: right;
+    padding: 50px 0;
+}
+/* footer part css end */
