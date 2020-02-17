@@ -52,8 +52,8 @@ $(function($) {
                 explodedRadius: 5,
                 explodedSlices: [0],
                 data: [['JSC', 140], ['SSC', 122], ['HSC', 97]],
-                labelsPosition: 'outside', // inside, outside
-                labelsAlign: 'circle', // circle, column
+                labelsPosition: 'outside',
+                labelsAlign: 'circle', 
                 labelsExtend: 15,
                 leaderLineWidth: 2,
                 leaderLineStrokeStyle: 'green'

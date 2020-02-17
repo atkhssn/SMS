@@ -107,7 +107,7 @@ ul, ol, li{
     font-weight: 600;
     color: #ffffff;
     letter-spacing: 1.8px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .site-btn1:hover{
@@ -122,6 +122,10 @@ ul, ol, li{
     padding: 7px 10px;
     font-weight: 600;
     color: #ffffff;
+}
+
+.site-clr{
+    clear: both;
 }
 /* common css end */
 
@@ -169,7 +173,7 @@ ul, ol, li{
 .right_side .top_menu ul li a{
     font-size: 12px;
     color:#000000;
-    transition: all 0.35s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .right_side .top_menu ul li a:hover{
@@ -373,27 +377,155 @@ ul, ol, li{
 .highlight-content{
     width: 100%;
     display: flex;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .highlight-content .h-notice-part{
     width: 25%;
+    box-sizing: border-box;
+}
+
+.highlight-content .h-notice-part .h-notice-part-content{
+    padding: 5px;
+    border: 1px solid #1E7821;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .highlight-content .h-class-routine{
     width: 25%;
+    box-sizing: border-box;
+}
+
+.highlight-content .h-class-routine .h-class-routine-content{
+    padding: 5px;
+    border: 1px solid #1E7821;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .highlight-content .h-student-attendence{
     width: 25%;
+    box-sizing: border-box;
+}
+
+.highlight-content .h-student-attendence .h-student-attendence-content{
+    padding: 5px;
+    border: 1px solid #1E7821;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .highlight-content .h-gallery-part{
     width: 25%;
+    box-sizing: border-box;
+}
+
+.highlight-content .h-gallery-part .h-gallery-part-content{
+    padding: 5px;
+    border: 1px solid #1E7821;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.highlight-content  .highlight-content-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #1E7821;
+    margin: 10px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #46A049;
+    transition: all 0.3s ease;
+}
+
+.highlight-content  .highlight-content-icon i{
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 1.1;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.highlight-content p{
+    text-align: center;
+    font-weight: 500;
+    color: #1E7821;
+    font-size: 18px;
+    letter-spacing: 1.5;
+}
+
+.highlight-content a{
+    display: block;
+    margin: 5px auto;
+    font-size: 12px;
+    padding: 5px 7px;
+    background: #46A049 !important;
+    border-radius: 2px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.highlight-content a:hover{
+    background:#1E7821 !important;
+}
+
+.highlight-content .h-notice-part .h-notice-part-content:hover > .highlight-content-icon, .highlight-content .h-class-routine .h-class-routine-content:hover > .highlight-content-icon, .highlight-content .h-student-attendence .h-student-attendence-content:hover > .highlight-content-icon, .highlight-content .h-gallery-part .h-gallery-part-content:hover > .highlight-content-icon{
+    background: transparent;
+}
+
+.highlight-content .h-notice-part .h-notice-part-content:hover > .highlight-content-icon i, .highlight-content .h-class-routine .h-class-routine-content:hover > .highlight-content-icon i, .highlight-content .h-student-attendence .h-student-attendence-content:hover > .highlight-content-icon i, .highlight-content .h-gallery-part .h-gallery-part-content:hover > .highlight-content-icon i{
+    color: #1E7821;
 }
 /* highlight content part css end */
 
-/* sidebar content part css start */
+/* home page content part css start */
+.home-content .our-history{
+    margin-bottom: 38px;
+}
 
+.home-content .chairman-message{
+    margin-bottom: 38px;
+}
+
+.home-content .principal-message{
+    margin-bottom: 38px;
+}
+
+.home-content h2{
+    padding: 7px;
+    background: #46A049 !important;
+    border-bottom: 2px solid #1E7821;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.home-content img{
+    width: 300px;
+    float: left;
+    background: #ffffff;
+    padding: 5px;
+    border: 1px solid #1E7821;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.home-content p{
+    color: #000000;
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 15px;
+}
+/* home page content part css end */
+
+/* sidebar content part css start */
 .sidebar-body{
     width: 28%;
     box-sizing: border-box;
@@ -472,7 +604,7 @@ ul, ol, li{
     line-height: 0;
     border: none !important;
 }
-/* calender part css */
+/* calender part css start */
 .nao-month td.today{
     box-shadow: 0 0 0 2px #46A049 inset;
 }
@@ -484,7 +616,32 @@ ul, ol, li{
 .calendar-1{
     margin-top: 20px;
 }
+/* calender part css end */
 
+/* dev atkhssn part css start */
+.dev-atkhssn{
+    width: 100%;
+    display: flex;
+}
+
+.dev-atkhssn .ads{
+    width: 65%;
+}
+
+.dev-atkhssn .visitor-count{
+    width: 35%;
+    margin-top: -30px;
+}
+
+.dev-atkhssn .ads p{
+    display: block;
+    margin: 0;
+    outline: 0;
+    font-size: 10px;
+    color: #777777;
+    text-align: right;
+}
+/* dev atkhssn part css end */
 /* sidebar content part css end */
 /* main content part css end */
 /* wesite content part css end */
@@ -492,7 +649,6 @@ ul, ol, li{
 /* footer part css start */
 .site-footer{
     width: 100%;
-    height: 350px;
     background: url(../img/footer-img.png) repeat fixed 0 0 #000000;
     color : #ffffff;
 }
@@ -506,28 +662,37 @@ ul, ol, li{
 .footer-content .footer-left{
     width: 33.33%;
     box-sizing: border-box;
+    margin: 30px 0;
+}
+
+.footer-content .footer-left  h2{
+    color: #1E7821;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-content .footer-left p{
     color: #ffffff;
     text-align: left;
-    padding: 50px 0;
+    font-size: 12px;
 }
 
 .footer-content .footer-middle{
     width: 33.33%;
     box-sizing: border-box;
+    margin: 30px 0;
 }
 
 .footer-content .footer-middle .footer-logo{
-    width: 150px;
-    height: 150px;
-    margin: 70px auto 60px;
+    width: 120px;
+    height: 120px;
+    margin: 15px auto;
 }
 
 .footer-content .footer-middle p{
     color: #ffffff;
     text-align: center;
+    font-size: 12px;
 }
 
 .footer-content .footer-middle p a{
@@ -537,11 +702,26 @@ ul, ol, li{
 .footer-content .footer-right{
     width: 33.33%;
     box-sizing: border-box;
+    margin: 30px 0;
 }
 
 .footer-content .footer-right p{
-    color: #ffffff;
     text-align: right;
-    padding: 50px 0;
+}
+
+.footer-content .footer-right p span{
+    color: #1E7821;
+}
+
+.footer-content .footer-right p a{
+    color: #ffffff;
+    font-size: 12px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer-content .footer-right p a:hover{
+    color: #46A049;
+    margin-right: 8px;
 }
 /* footer part css end */
