@@ -386,8 +386,12 @@
                     <div class="footer-logo">
                         <img src="assets/img/f-logo.png" alt="logo">
                     </div>
-                   <p> 2020 © All rights are reserved | Powered by <a href="http://atkhssn.me" target="_blank">atkhssn</a></p>
+                   <p> <span id="year"></span> © All rights are reserved | Powered by <a href="http://atkhssn.me" target="_blank">atkhssn</a></p>
                 </div>
+
+                <script>
+                    document.getElementById("year").innerHTML = new Date().getFullYear();
+                </script>
                 <!-- footer middle part end -->
 
                 <!-- footer right part start -->
@@ -406,6 +410,103 @@
         </div>
    </footer>
    <!-- footer part end -->
+
+   <!-- feedback part start -->
+   <!-- feedback batton part start-->
+    <button type="button" class="btn btn-primary feedback-btn" data-toggle="modal" data-target="#site-feedback">
+        Feedback
+    </button>
+    <!-- feedback batton part end-->
+  
+    <!-- feedback main body part start -->
+    <div class="modal fade" id="site-feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Guardian Feedback</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation" novalidate method="POST" action="#">
+                        <div class="form-row">
+                          <div class="col-md-12 mb-3">
+                            <label for="feed-name">Full name</label>
+                            <input type="text" class="form-control feed-input" id="feed-name" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your full name.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="feed-contact">Mobile Number</label>
+                            <input type="text" class="form-control feed-input" id="feed-contact" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your mobile number.
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="feed-email">Email Address</label>
+                            <input type="email" class="form-control feed-input" id="feed-email" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your email address.
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <label for="feed-message">Your message</label>
+                            <textarea type="email" class="form-control feed-input" id="feed-message" required></textarea>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your email address.
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary feed-submit" type="submit">Submit feedback</button>
+                      </form>
+                      
+                      <script>
+                      // Example starter JavaScript for disabling form submissions if there are invalid fields
+                      (function() {
+                        'use strict';
+                        window.addEventListener('load', function() {
+                          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                          var forms = document.getElementsByClassName('needs-validation');
+                          // Loop over them and prevent submission
+                          var validation = Array.prototype.filter.call(forms, function(form) {
+                            form.addEventListener('submit', function(event) {
+                              if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                              }
+                              form.classList.add('was-validated');
+                            }, false);
+                          });
+                        }, false);
+                      })();
+                      </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feedback main body part end -->
+    <!-- feedback part end -->
+
+    <!-- scroll to top part start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="assets/img/arrow.webp" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+    <!-- scroll to top part end -->
     
     <!-- important javaScript file link sart -->
     <!-- jQuery plugin -->
@@ -435,15 +536,6 @@
 
     <!-- main javascript app -->
     <script type="application/javascript" src="assets/js/app.js"></script>
-
     <!-- important javaScript file link end -->
-
-    <!-- scroll to top part start -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-    var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="assets/img/arrow.webp" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
-
-    <!-- scroll to top part end -->
-
 </body>
 </html>

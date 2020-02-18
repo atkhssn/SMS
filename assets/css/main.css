@@ -12,8 +12,44 @@
 body{
     background: url(../img/bg-img.png) repeat fixed 0 0 #ffffff;
     font-family: 'Roboto', sans-serif !important;
+    position: relative;
 }
 /* site setting for css end */
+
+/* feedback button part css start */
+.feedback-btn{
+    position: absolute;
+    left: -30px;
+    top: 20%;
+    transform: rotate(-90deg);
+    background: #46A049 !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    border-radius: 3px !important;
+}
+
+.feed-submit{
+    background: #46A049 !important;
+    transition: all 0.3s ease !important;
+    border: none !important;
+    border-radius: 3px !important;
+}
+
+.feedback-btn:hover, .feed-submit:hover{
+    background: #1E7821 !important;
+}
+
+.feedback-btn:focus, .feed-submit:focus{
+    box-shadow: none !important;
+}
+
+.feed-input:focus{
+    border: 1px solid #1E7821 !important;
+    box-shadow: none !important;
+}
+
+
+/* feedback button part css end */
 
 /* common css start */
 a, a:hover{
@@ -668,7 +704,7 @@ ul, ol, li{
 .footer-content .footer-left  h2{
     color: #1E7821;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .footer-content .footer-left p{
