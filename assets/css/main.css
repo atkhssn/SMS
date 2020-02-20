@@ -28,7 +28,7 @@ body{
     border-radius: 3px !important;
 }
 
-.feed-submit{
+.feed-submit, .contact-submit{
     background: #46A049 !important;
     transition: all 0.3s ease !important;
     border: none !important;
@@ -334,18 +334,20 @@ ul, ol, li{
     width: 72%;
     box-sizing: border-box;
     overflow: hidden;
-    margin-right: 10px;
-    -webkit-box-shadow: 0px 0px 4px 1px #777777; 
-    box-shadow: 0px 0px 4px 1px #777777;
+    background: #f9f9f9 !important;
+    margin-right: 8px;
+    -webkit-box-shadow: 0px 0px 9px 0px #777777; 
+    box-shadow: 0px 0px 9px 0px #777777;
+    border: 1px solid #868686;
+    border-top: none;
+    border-bottom: none;
 }
 
 .main-content{
     width: 100%;
-    background: #f9f9f9 !important;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 5px;
-    
+    padding: 7px;
 }
 
 /* slider part css start */
@@ -567,17 +569,20 @@ ul, ol, li{
     box-sizing: border-box;
     overflow: hidden;
     box-sizing: border-box;
-    margin-left: 10px;
-    -webkit-box-shadow: 0px 0px 4px 1px #777777; 
-    box-shadow: 0px 0px 4px 1px #777777;
+    background: #f9f9f9 !important;
+    margin-left: 8px;
+    -webkit-box-shadow: 0px 0px 9px 0px #777777; 
+    box-shadow: 0px 0px 9px 0px #777777;
+    border: 1px solid #868686;
+    border-top: none;
+    border-bottom: none;
 }
 
 .sidebar-content{
     width: 100%;
-    background: #f9f9f9 !important;
     box-sizing: border-box;
     overflow: hidden;
-    padding: 5px;
+    padding: 7px;
 }
 
 .sidebar-content .sidebar-heading{
@@ -761,3 +766,120 @@ ul, ol, li{
     margin-right: 8px;
 }
 /* footer part css end */
+
+/* page header part css start */
+#page-header{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    width: 100%;
+    background: url(../img/headerbg.png) repeat fixed 0 0 #000;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.page-title{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.page-title h2{
+    color: #1E7821;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.page-title p{
+    color: #111111;
+}
+
+.page-title a.page-active{
+    color: #1E7821;
+    transition: all 0.3s ease;
+}
+
+.page-title a.page-active:hover{
+    color: #46A049;
+}
+/* page header part css end */
+
+
+/* contact page main body content part start */
+.our-address, .contact-form, .google-map{
+    margin-bottom: 50px;
+}
+
+.our-address .site-heading, .contact-form .site-heading, .google-map .site-heading{
+    margin-bottom: 15px;
+}
+
+.our-address .our-logo{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.our-address .our-logo img{
+    border: none !important;
+    width: 100%;
+    float: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.our-address .our-logo small{
+    font-size: 9px;
+    color: #777777;
+    margin: 0;
+    margin-top: -8px;
+    padding: 0;
+    outline: 0;
+    display: block;
+}
+
+.our-address .contact-address{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.our-address .contact-address .ad-part-1, .our-address .contact-address .ad-part-2{
+    width: 33%;
+    padding: 10px;
+}
+
+.our-address .contact-address .ad-part-3{
+    width: 34%;
+    padding: 10px;
+}
+
+.our-address .contact-address .ad-part-1 p, .our-address .contact-address .ad-part-2 p, .our-address .contact-address .ad-part-3 p{
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 14px;
+}
+
+.our-address .contact-address .ad-part-1 p span, .our-address .contact-address .ad-part-2 p span, .our-address .contact-address .ad-part-3 p span{
+    font-weight: 500;
+    color: #1E7821;
+}
+
+.contact-form form label{
+    margin-top: .6rem;
+}
+
+.contact-form form .contact-submit{
+    margin-top: 15px;
+}
+
+.google-map iframe{
+    border: 2px solid #1E7821;
+}
+
+/* contact page main body content part end */
