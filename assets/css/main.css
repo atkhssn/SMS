@@ -26,6 +26,7 @@ body{
     transition: all 0.3s ease !important;
     border: none !important;
     border-radius: 3px !important;
+
 }
 
 .feed-submit, .contact-submit{
@@ -33,6 +34,8 @@ body{
     transition: all 0.3s ease !important;
     border: none !important;
     border-radius: 3px !important;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 .feedback-btn:hover, .feed-submit:hover{
@@ -871,15 +874,114 @@ ul, ol, li{
 }
 
 .contact-form form label{
-    margin-top: .6rem;
+    margin-top: .65rem;
 }
 
 .contact-form form .contact-submit{
     margin-top: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    background: #46A049;
+    transition: all 0.3s ease;
+}
+
+.contact-form form .contact-submit:hover{
+    background: #1E7821 !important;
+}
+
+.contact-form form .contact-submit:focus{
+    box-shadow: none;
+}
+
+.contact-form form{
+    padding: 15px;
 }
 
 .google-map iframe{
     border: 2px solid #1E7821;
 }
-
 /* contact page main body content part end */
+
+/* career part css start */
+.career-part .career-content{
+    width: 100%;
+    display: flex;
+}
+
+.career-part .career-content .career-left{
+    width: 40%;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+
+.career-part .career-content .career-right{
+    width: 60%;
+    box-sizing: border-box;
+    margin-left: 8px;
+}
+
+.career-part .career-content .career-left img{
+    padding: 0;
+    margin: 70px 0;
+    outline: 0;
+    float: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+
+.career-part .career-content .career-right p{
+    padding: 0;
+    margin: 15px 0;
+    outline: 0;
+}
+
+.career-form form{
+    padding: 15px;
+}
+
+.career-form label{
+    margin-top: .65rem;
+}
+
+.career-form .career-submit {
+	background: #46A049;
+	transition: all 0.3s ease;
+	margin-top: 24.5px;
+	border: none;
+	border-radius: 3px;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 7.5px 15px;
+}
+
+.career-form .career-submit:hover{
+    background: #1E7821;
+}
+
+.career-form .career-submit:focus{
+    box-shadow: none;
+}
+
+.career-form form .custom-file{
+    margin-top: 13px;
+}
+
+.career-form form .custom-file small{
+    margin-top: 15px;
+    display: block;
+    font-size: 9px;
+    color: #868686;
+}
+
+.career-form form .custom-file input[type = 'file']{
+    cursor: pointer;
+}
+
+.career-form form .custom-file input[type = 'file']:focus ~ .custom-file-label {
+	border-color: #1E7821;
+    box-shadow: none;
+}
+/* career part css end */
