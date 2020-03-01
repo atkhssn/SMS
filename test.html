@@ -4,53 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/sweetalert.min.js"></script>
 </head>
 <body>
-    <div class="img-list">
-        <img src="image/img1.jpg" alt="1" />
-        <img src="image/img1.jpg" alt="2" />
-        <img src="image/img1.jpg" alt="3" />
-        <img src="image/img1.jpg" alt="4" />
-        <img src="image/img1.jpg" alt="5" />
-        <img src="image/img1.jpg" alt="6" />
-        <img src="image/img1.jpg" alt="7" />
-        <img src="image/img1.jpg" alt="8" />
-        <img src="image/img1.jpg" alt="9" />
-        <img src="image/img1.jpg" alt="10" />
-        <img src="image/img1.jpg" alt="11" />
-        <img src="image/img1.jpg" alt="12" />
-        <img src="image/img1.jpg" alt="13" />
-        <img src="image/img1.jpg" alt="14" />
-        <img src="image/img1.jpg" alt="15" />
-    </div>
-    <a href="#" class="prev">Prev</a>
-    <a href="#" class="next">Next</a>
+    <button id="test">Click Here</button>
 
     <script>
-        var start = 0;
-var nb = 5;
-var end = start + nb;
-var length = $('.img-list img').length;
-var list = $('.img-list img');
-
-list.hide().filter(':lt('+(end)+')').show();
-
-
-$('.prev, .next').click(function(e){
-   e.preventDefault();
-
-   if( $(this).hasClass('prev') ){
-       start -= nb;
-   } else {
-       start += nb;
-   }
-
-   if( start < 0 || start >= length ) start = 0;
-   end = start + nb;       
-
-   if( start == 0 ) list.hide().filter(':lt('+(end)+')').show();
-   else list.hide().filter(':lt('+(end)+'):gt('+(start-1)+')').show();
-});
+        $('#test').click(function(){
+            swal({
+            title: "Good job!",
+            text: "You clicked the button!",
+            icon: "success",
+            });
+        });
     </script>
 </body>
 </html>

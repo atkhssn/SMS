@@ -105,6 +105,12 @@ $('#videoPaginate').easyPaginate({
 });
 
 // FancyBox JS
-$('[data-fancybox="gallery"]').fancybox({
-        
-});
+$('[data-fancybox="gallery"]').fancybox({});
+
+// SweetAlert JS
+// swal({
+//     icon: 'info',
+//     title: 'Oops..',
+//     text: 'The site is upgrading. To know more contact with developer!',
+//     timer: 3000
+// })
