@@ -285,6 +285,10 @@ ul, ol, li{
     transition: all 0.3s ease;
     background-color: #46A049 !important;
 }
+
+#main-nav ul li .dropdown-menu .dmenu-link{
+    font-size: 12px !important;
+}
 /* main menu part css end */
 
 /* Notice headline part css start */
@@ -548,7 +552,7 @@ ul, ol, li{
     letter-spacing: 1.2px;
 }
 
-.home-content img{
+.home-content .home-img{
     width: 300px;
     float: left;
     background: #ffffff;
@@ -985,3 +989,116 @@ ul, ol, li{
     box-shadow: none;
 }
 /* career part css end */
+
+/* gallery part css start */
+.gallery-content{
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.gallery-content .gallery-thumb{
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.gallery-content .gallery-thumb .gallery-img {
+    width: 32.03% !important;
+    min-width: 247px !important;
+	float: left !important;
+	background: transparent !important;
+	padding: 3px !important;
+	border: 1px solid #1E7821 !important;
+    margin: 30px 5px !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    position: relative;
+}
+
+.gallery-content .gallery-thumb .gallery-img .gallery-img-content{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 170px;
+}
+
+.gallery-content .gallery-thumb .gallery-img .gallery-img-content .gallery-thumb-overly{
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 120, 33, .6);
+    transition: all 0.3s ease;
+    transform: scale(0);
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gallery-content .gallery-thumb .gallery-img .gallery-img-content:hover .gallery-thumb-overly{
+    transform: scale(1);
+}
+
+.gallery-content .gallery-thumb .gallery-img .gallery-img-content .gallery-thumb-overly h3{
+    color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+}
+
+.gallery-content .gallery-thumb .gallery-img .gallery-img-content .gallery-thumb-overly a{
+    color: #ffffff;
+    padding: 7px 10px;
+    border: 1px solid #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: inline-block;
+    margin: 40px 0;
+    transition: all 0.3s ease;
+}
+
+.gallery-content .gallery-thumb .gallery-img .gallery-img-content .gallery-thumb-overly a:hover{
+    background: #1E7821 !important;
+    border-color: #1E7821;
+}
+
+.easyPaginateNav{
+    display: block;
+    margin: 50px auto;
+    width: 367px !important;
+}
+
+.easyPaginateNav a{
+    padding: 10px 15px;
+    border: 1px solid #1E7821;
+    background: #46A049 !important;
+    transition: all 0.3s ease;
+    border-left-color: #1E5100 !important;
+    border-right-color: #1E5100 !important;
+}
+
+.easyPaginateNav a:first-child{
+    border-left: 1px solid #1E7821 !important;
+}
+
+.easyPaginateNav a:last-child{
+    border-right: 1px solid #1E7821 !important;
+}
+
+.easyPaginateNav a:hover{
+    background: #1E7821 !important;
+    color: #ffffff !important;
+}
+
+.easyPaginateNav a.current {
+    background: #1E7821 !important;
+    color: #ffffff !important;
+}
+/* gallery part css end */

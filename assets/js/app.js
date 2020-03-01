@@ -60,40 +60,51 @@ $(function($) {
             }
         ]
     });
-
-    // Coundown js
-    var cd = new Countdown({
-        cont: document.querySelector('.containera'),
-        date: 1993468400000,
-        outputTranslation: {
-            
-            day: 'Days',
-            hour: 'Hours',
-            minute: 'Minutes',
-            second: 'Seconds',
-        },
-        endCallback: null,
-        outputFormat: 'week|day|hour|minute|second',
-    });
-    cd.start();
-
-    
 });
 
+// Event counter
 document.addEventListener('DOMContentLoaded', () => {
 
-    // // Unix timestamp (in seconds) to count down to
+    // Unix timestamp (in seconds) to count down to
     var twoDaysFromNow = (new Date(2020, 3-1, 15).getTime() / 1000) + (86400 * 2) + 1;
   
     // Set up FlipDown
     var flipdown = new FlipDown(twoDaysFromNow)
   
-      // Start the countdown
-      .start()
+    // Start the countdown
+    .start()
   
-      // Do something when the countdown ends
-      .ifEnded(() => {
+    // Do something when the countdown ends
+    .ifEnded(() => {
         console.log('The countdown has ended!');
-      });
-  });
+    });
+
+    
+});
   
+// Easy pagination
+$('#photoPaginate').easyPaginate({
+    paginateElement: '.gallery-img',
+    elementsPerPage: 9,
+    effect: 'climb',
+    firstButtonText: 'Frist',
+    lastButtonText: 'Last',
+    prevButtonText: 'Previous',
+    nextButtonText: 'Next',
+});
+
+// Easy pagination
+$('#videoPaginate').easyPaginate({
+    paginateElement: '.gallery-img',
+    elementsPerPage: 9,
+    effect: 'climb',
+    firstButtonText: 'Frist',
+    lastButtonText: 'Last',
+    prevButtonText: 'Previous',
+    nextButtonText: 'Next',
+});
+
+// FancyBox JS
+$('[data-fancybox="gallery"]').fancybox({
+        
+});
