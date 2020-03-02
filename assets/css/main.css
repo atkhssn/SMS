@@ -1224,3 +1224,24 @@ ul, ol, li{
     border: 1px solid #1E7821;
 }
 /* result part css end */
+
+/* board result search part css start */
+.board-result-search iframe{
+    margin-top: 30px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+.board-result-search p{
+    text-align: right;
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: #777777;
+}
+
+.board-result-search p a{
+    color: #1E7821;
+}
+/* board result search part css end */

@@ -1,23 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/sweetalert.min.js"></script>
-</head>
-<body>
-    <button id="test">Click Here</button>
+<!DOCTYPE html> 
+<html> 
 
-    <script>
-        $('#test').click(function(){
-            swal({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success",
-            });
-        });
-    </script>
-</body>
-</html>
+<head> 
+	<title>How to insert HTML content 
+	into an iFrame using jQuery?</title> 
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"> 
+</script> 
+	<style type="text/css"> 
+		textarea, 
+		iframe { 
+			display: block; 
+			margin: 10px 0; 
+		} 
+		
+		iframe { 
+			width: 500px; 
+			border: 1px solid #000000; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<center> 
+		<h1 style="color:green;"> 
+		GeeksForGeeks 
+	</h1> 
+		<h3> 
+		How to insert HTML content into an iFrame using jQuery 
+	</h3> 
+		<textarea rows="2" cols="40" style="text-align:center;"> 
+		GEEKSFORGEEKS - A computer science portal for geeks. 
+	</textarea> 
+		<button type="button" onclick="updateIframe()"> 
+		Click to Insert 
+	</button> 
+		<iframe style="text-align:center;" id="myframe"></iframe> 
+		<script type="text/javascript"> 
+			function updateIframe() { 
+				var myFrame = $("#myframe").contents().find('body'); 
+				var textareaValue = $("textarea").val(); 
+				myFrame.html(textareaValue); 
+			} 
+		</script> 
+	</center> 
+</body> 
+
+</html> 
