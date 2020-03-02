@@ -114,3 +114,114 @@ $('[data-fancybox="gallery"]').fancybox({});
 //     text: 'The site is upgrading. To know more contact with developer!',
 //     timer: 3000
 // })
+
+// JSC Bar Chart JS
+var ctx = document.getElementById('jscChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2020', '2019', '2018', '2017', '2016'],
+        datasets: [{
+            label: 'The percentage is',
+            data: [97, 95, 80, 87, 82],
+            backgroundColor: [
+                'rgba(30, 120, 33, 0.3)',
+                'rgba(70, 160, 73, 0.2)',
+                'rgba(30, 120, 33, 0.3)',
+                'rgba(70, 160, 73, 0.2)',
+                'rgba(30, 120, 33, 0.3)'
+            ],
+            borderColor: [
+                'rgba(30, 120, 33, 1)',
+                'rgba(70, 160, 73, 1)',
+                'rgba(30, 120, 33, 1)',
+                'rgba(70, 160, 73, 1)',
+                'rgba(30, 120, 33, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+// SSC Bar Chart JS
+var ctx = document.getElementById('sscChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2020', '2019', '2018', '2017', '2016'],
+        datasets: [{
+            label: 'The percentage is',
+            data: [89, 79, 83, 91, 80],
+            backgroundColor: [
+                'rgba(30, 120, 33, 0.3)',
+                'rgba(70, 160, 73, 0.2)',
+                'rgba(30, 120, 33, 0.3)',
+                'rgba(70, 160, 73, 0.2)',
+                'rgba(30, 120, 33, 0.3)'
+            ],
+            borderColor: [
+                'rgba(30, 120, 33, 1)',
+                'rgba(70, 160, 73, 1)',
+                'rgba(30, 120, 33, 1)',
+                'rgba(70, 160, 73, 1)',
+                'rgba(30, 120, 33, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+
+// HSC Bar Chart JS
+var ctx = document.getElementById('hscChart');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['2020', '2019', '2018', '2017', '2016'],
+        datasets: [{
+            label: 'The percentage is',
+            data: [75, 50, 57, 66, 43],
+            backgroundColor: [
+                'rgba(30, 120, 33, 0.3)',
+                'rgba(70, 160, 73, 0.2)',
+                'rgba(30, 120, 33, 0.3)',
+                'rgba(70, 160, 73, 0.2)',
+                'rgba(30, 120, 33, 0.3)'
+            ],
+            borderColor: [
+                'rgba(30, 120, 33, 1)',
+                'rgba(70, 160, 73, 1)',
+                'rgba(30, 120, 33, 1)',
+                'rgba(70, 160, 73, 1)',
+                'rgba(30, 120, 33, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});

@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.css"/>
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- important css link end -->
 
@@ -180,22 +181,213 @@
             <div class="main-content">
                 <div class="home-content">
                     <!-- career part start -->
-                    <div class="career-part">
+                    <div class="result-search">
                       <h2 class="site-heading">Search Result</h2>
-                      <div style="margin-bottom: 50px;">
-                        Hello World!
+                      <div class="result-container">
+                          <div class="board-result">
+                            <div class="result-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Search Your Board Result</h3>
+                            <a href="board-result.html">Search Here</a>
+                          </div>
+
+                          <div class="class-result">
+                            <div class="result-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>Search Your Class Result</h3>
+                            <a href="class-result.html">Search Here</a>
+                          </div>
                       </div>
                     </div>
                     <!-- career part end -->
 
-                    <!-- career form part start -->
-                    <div class="career-form">
-                        <h2 class="site-heading">Institute Result</h2>
-                        <div style="margin-bottom: 50px;">
-                          Hello World!
+                    <!-- result stat part start -->
+                    <div class="result-stat">
+                        <h2 class="site-heading">Result Statistics</h2>
+                        <!-- statistics part start-->
+                        <div class="result-stat-container">
+                            <h3>The Statistics of board result over the last five years.</h3>
+                            <div class="result-graph">
+                                <div class="jsc-graph">
+                                    <canvas id="jscChart" width="100%" height="90"></canvas>
+                                    <h5>JSC Result</h5>
+                                </div>
+                                <div class="ssc-graph">
+                                    <canvas id="sscChart" width="100%" height="90"></canvas>
+                                    <h5>SSC Result</h5>
+                                </div>
+                                <div class="hsc-graph">
+                                    <canvas id="hscChart" width="100%" height="90"></canvas>
+                                    <h5>HSC Result</h5>
+                                </div>
+                            </div>
                         </div>
+                        <!-- statistics part end -->
+
+                        <!-- datasheet part start -->
+                        <div class="result-datasheet">
+                            <h3>The Data-Sheet of board result over the last five years.</h3>
+                            <div class="jsc-datasheet">
+                                <table class="table table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Total Student</th>
+                                        <th scope="col">Total Passed</th>
+                                        <th scope="col">G.P.A-5</th>
+                                        <th scope="col">Percentage </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">2020</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2019</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2018</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2017</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2019</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <h5>JSC Result</h5>
+                            </div>
+
+                            <div class="ssc-datasheet">
+                                <table class="table table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Total Student</th>
+                                        <th scope="col">Total Passed</th>
+                                        <th scope="col">G.P.A-5</th>
+                                        <th scope="col">Percentage </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">2020</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2019</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2018</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2017</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2019</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <h5>SSC Result</h5>
+                            </div>
+
+                            <div class="hsc-datasheet">
+                                <table class="table table-striped">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Year</th>
+                                        <th scope="col">Total Student</th>
+                                        <th scope="col">Total Passed</th>
+                                        <th scope="col">G.P.A-5</th>
+                                        <th scope="col">Percentage </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">2020</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2019</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2018</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2017</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2019</th>
+                                        <td>100</td>
+                                        <td>95</td>
+                                        <td>50</td>
+                                        <td>95%</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <h5>HSC Result</h5>
+                            </div>
+                        </div>
+                        <!-- datasheet part end -->
                     </div>
-                    <!-- career form part end -->
+                    <!-- result stat part end -->
                 </div>
             </div>
         </div>
@@ -466,6 +658,9 @@
 
     <!-- sweetalert js -->
     <script src="assets/js/sweetalert.min.js"></script>
+
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 
     <!-- main javascript app -->
     <script type="application/javascript" src="assets/js/app.js"></script>

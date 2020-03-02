@@ -1102,3 +1102,125 @@ ul, ol, li{
     color: #ffffff !important;
 }
 /* gallery part css end */
+
+/* result part css start */
+.result-search{
+    margin-bottom: 30px;
+}
+
+.result-search .result-container{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.result-search .result-container .board-result, .result-search .result-container .class-result{
+    width: 50%;
+    border: 1px solid #1E7821;
+    margin-right: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.result-search .result-container .class-result{
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.result-search .result-container .board-result .result-icon i, .result-search .result-container .class-result .result-icon i{
+    font-size: 32px;
+    padding: 20px;
+    border-radius: 50%;
+    background: #46A049;
+    border: 2px solid #1E7821;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.result-search .result-container .board-result:hover .result-icon i, .result-search .result-container .class-result:hover .result-icon i{
+    background: #ffffff;
+    color: #1E7821;
+}
+
+.result-search .result-container .board-result h3, .result-search .result-container .class-result h3{
+    margin: 12px 0;
+    font-size: 18px;
+    color: #1E7821;
+    text-transform: uppercase;
+}
+
+.result-search .result-container .board-result a, .result-search .result-container .class-result a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #46A049 !important;
+    padding: 7px 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 3px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    transition: all 0.3s ease;
+}
+
+.result-search .result-container .board-result a:hover, .result-search .result-container .class-result a:hover{
+    background: #1E7821 !important;
+}
+
+.result-stat-container h3, .result-datasheet h3{
+    text-align: center;
+    margin-top: 30px;
+    color: #1E7821;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.result-stat-container .result-graph{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin: 30px 0;
+}
+
+.result-stat-container .result-graph h5, .result-datasheet h5{
+    color: #1E7821;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.result-stat-container .result-graph .jsc-graph{
+    width: 33.25%;
+    border: 1px solid #1E7821;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.result-stat-container .result-graph .ssc-graph{
+    width: 33.50%;
+    border: 1px solid #1E7821;
+    box-sizing: border-box;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.result-stat-container .result-graph .hsc-graph{
+    width: 33.25%;
+    border: 1px solid #1E7821;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.result-datasheet{
+    margin-top: 50px;
+}
+
+.result-datasheet .jsc-datasheet, .result-datasheet .ssc-datasheet, .result-datasheet .hsc-datasheet{
+    margin-top: 30px;
+    border: 1px solid #1E7821;
+}
+/* result part css end */
