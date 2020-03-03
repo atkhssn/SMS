@@ -1,6 +1,6 @@
 $(function($) {
     "use strict";
-
+    
     // Calendar
     $('.calendar-1').calendar();
 

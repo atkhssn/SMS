@@ -1245,3 +1245,82 @@ ul, ol, li{
     color: #1E7821;
 }
 /* board result search part css end */
+
+/* class result search part css start */
+.class-result-search .search-result-container{
+    width: 100%;
+    margin-top: 30px;
+    background: #EEEEEE;
+    border: 1px solid #dddddd !important;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.class-result-search .search-result-container .search-result-panel{
+    width: 450px;
+    margin: 70px auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #f9f9f9;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(221,221,221,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(221,221,221,1);
+    box-shadow: 0px 0px 5px 1px rgba(221,221,221,1);
+}
+
+.class-result-search .search-result-container .search-result-panel .search-result-logo{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 2px;
+    border: 2px solid #1E7821;
+    border-radius: 50%;
+}
+
+.class-result-search .search-result-container .search-result-panel .search-result-form{
+    margin: 30px 5px;
+}
+
+.class-result-search .search-result-container .search-result-panel .search-result-form label{
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #111111;
+    letter-spacing: 1.1px;
+}
+
+.class-result-search .search-result-container .search-result-panel .search-result-form select,
+.class-result-search .search-result-container .search-result-panel .search-result-form input{
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #111111;
+}
+
+.class-result-search .search-result-container .search-result-panel .search-result-form .search-result-btn{
+    display: inline-block !important;
+    margin-top: 20px !important;
+    background: #1E7821 !important;
+    border: none !important;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.class-result-search .search-result-container .search-result-panel .search-result-form .search-result-btn:focus{
+    box-shadow: none !important;
+}
+
+.class-result-search .search-result-container p{
+    font-size: 9px;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.class-result-search .search-result-container p a{
+    color: #1E7821;
+}
+/* class result search part css end */
