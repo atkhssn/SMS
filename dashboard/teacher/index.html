@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Fulbari G.U.B. School & College</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <script src="https://kit.fontawesome.com/9027a7a978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header part start -->
+    <header class="dash-header">
+        <div class="header-content">
+            <div class="left-part">
+                <div class="header-left-content">
+                    <p>
+                        Fulbari Gomir Uddin Bahumukhi School and Collge
+                    </p>
+                </div>
+            </div>
+            <div class="mid-part">
+                <div class="header-mid-content">
+                    <div class="dash-logo">
+                        <img class="img-fluid" src="../assets/img/f-logo.png" alt="School-Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="header-right-content">
+                    <p style="margin-top: 18px;">
+                        Teacher Portal
+                    </p>
+                    <!-- <select class="custom-select" name="login-as" id="loginAs-select">
+                        <option value="teacher" selected>Teacher</option>
+                    </select> -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header part end -->
+
+    <!-- main boday part start -->
+    <Section class="main-part">
+        <div id="teacher" class="log-box">
+            <div class="login-box">
+                <h3>LogIn: Teacher</h3>
+                <div class="login-form">
+                    <form>
+                        <div class="form-group row">
+                          <label for="inputEmail3" class="col-3 col-form-label">Username:</label>
+                          <div class="col">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-3 col-form-label">Password:</label>
+                          <div class="col">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <div class="col text-left">
+                            <a href="javascript:void(0)">Forgot your password?</a>
+                          </div>
+                          <div class="col-3">
+                            <button type="submit" class="btn btn-primary login-btn">Log in</button>
+                          </div>
+                        </div>
+                      </form>
+                </div>
+                <p class="system-tag">System Developed & Maintained by Atik Hassan</p>
+            </div>
+        </div>
+    </Section>
+    <!-- main boday part end -->
+
+    <!-- footer part start -->
+    <footer class="dash-footer">
+        <div class="footer-content">
+            <div class="left-part">
+                <p>Contact: +880 1785 558 861</p>
+                <p>For any problem, Contact with developer without any hesitation.</p>
+            </div>
+            <div class="mid-part text-center">
+                <p>2020 - <span id="f-year"></span> © All rights reserved | Powered by <a href="http://atkhssn.me" target="_blank">atkhssn</a></p>
+            </div>
+            <div class="right-part text-right">
+              <p><a href="javascript:void(0)">Privacy</a> | <a href="javascript:void(0)">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end -->
+
+    <!-- important javaScript file link sart -->
+    <!-- jQuery plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- main app js -->
+    <script src="../assets/js/app.js"></script>
+    <!-- important javaScript file link end -->
+
+    <script>
+        document.getElementById("f-year").innerHTML = new Date().getFullYear();
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
