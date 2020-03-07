@@ -745,6 +745,11 @@ ul, ol, li{
 
 .footer-content .footer-middle p a{
     color:  #ffffff;
+    transition: all 0.3s ease;
+}
+
+.footer-content .footer-middle p a:hover{
+    text-decoration: underline;
 }
 
 .footer-content .footer-right{
