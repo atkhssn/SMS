@@ -226,7 +226,7 @@ ul, ol, li{
     color: white;
     border-right: none !important;
     background: #46A049 !important;
-    border: 1.8px solid #1E7821;
+    border: 1px solid #1E7821;
     width: 430px;
 }
 
@@ -240,7 +240,7 @@ ul, ol, li{
     border-radius: 3px !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
-    border: 1.8px solid #1E7821;
+    border: 1px solid #1E7821;
     color: white;
 }
 
@@ -545,7 +545,7 @@ ul, ol, li{
     border-bottom: 2px solid #1E7821;
     color: #ffffff;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1.2px;
 }
 
@@ -600,7 +600,7 @@ ul, ol, li{
     border-bottom: 2px solid #1E7821;
     color: #ffffff;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.2px;
 }
 
@@ -630,7 +630,7 @@ ul, ol, li{
 
 .sidebar-content .sidebar-heading ul li a{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 7px;
     line-height: 2;
     border-bottom: 1px dotted #1E7821 !important;
