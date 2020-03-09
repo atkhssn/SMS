@@ -1328,27 +1328,41 @@ ul, ol, li{
 /* class result search part css end */
 
 /* history part css start */
-.history-part{
+.history-part, .vision-mission-part{
     margin-bottom: 50px;
 }
 
-.history-part .history-img{
+.history-part .history-img, .vision-mission-part .vision-mission-img{
     width: 100%;
-    height: 250px;
+    height: 214px;
     overflow: hidden;
     margin: 30px 0;
     box-sizing: border-box;
     border: 2px solid #1E7821;
 }
 
-.history-part .history-content p{
+.history-part .history-content p, .vision-mission-part .vision-mission-content p{
     margin-top: -15px !important;
 }
 
-.history-part .history-content p span{
+.history-part .history-content p span, .vision-mission-part .vision-mission-content p span{
     font-size: 30px;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+/* history part css end */
+
+/*vision & mission part start */
+.vision-mission-part .vision-mission-content .vision-part h4, .vision-mission-part .vision-mission-content .mission-part h4{
+    color: #1E7821;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-
-/* history part css end */
+.vision-mission-part .vision-mission-content .mission-part h4{
+    margin-top: 50px;
+}
+/*vision & mission part end */
